@@ -1,0 +1,1427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Punarjani Charitable Trust - A Pan-Indian Vision</title>
+  <meta name="description" content="Learn about Punarjani Charitable Trust, our vision, mission, and the seven strategic pillars guiding our cultural, agricultural, and youth initiatives.">
+  
+  <!-- Google Fonts: Plus Jakarta Sans (English) & Anek Malayalam (Malayalam) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* ========================================================
+       GLOBAL VARIABLES & MODERN CLEAN UI
+       ======================================================== */
+    :root {
+      --primary: #066B41;
+      --primary-dark: #044b2d;
+      --primary-light: #0d8a55;
+      --accent-gold: #C59428;
+      --accent-gold-light: #FDF6E2;
+      --accent-green-soft: #E8F5EE;
+      --bg-white: #FFFFFF;
+      --bg-light: #F8FAF9;
+      --text-dark: #1E293B;
+      --text-body: #475569;
+      --text-muted: #64748B;
+      --border-color: #E2E8F0;
+      --border-green: #D1E5DA;
+      --shadow-sm: 0 2px 8px rgba(6, 107, 65, 0.05);
+      --shadow-md: 0 8px 24px rgba(6, 107, 65, 0.08);
+      --shadow-lg: 0 16px 40px rgba(6, 107, 65, 0.12);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --radius-full: 9999px;
+      --transition: all 0.25s ease;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', 'Anek Malayalam', sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.75;
+      font-size: 1rem;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: -0.02em;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: var(--transition);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .ml-text {
+      font-family: 'Anek Malayalam', sans-serif;
+      line-height: 1.9;
+    }
+
+    /* ========================================================
+       TOPBAR (Clean English)
+       ======================================================== */
+    .topbar {
+      background: var(--primary-dark);
+      color: #E2E8F0;
+      font-size: 0.88rem;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .topbar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .topbar-info {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .topbar-info a {
+      color: #E2E8F0;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .topbar-info a:hover {
+      color: var(--accent-gold);
+    }
+
+    .topbar-social {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .topbar-social a {
+      color: #E2E8F0;
+      font-size: 0.95rem;
+    }
+
+    .topbar-social a:hover {
+      color: var(--accent-gold);
+    }
+
+    /* ========================================================
+       HEADER & NAVIGATION (Clean English UI)
+       ======================================================== */
+    .header {
+      background: var(--bg-white);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1.5px solid #CBD5E1;
+      box-shadow: 0 2px 12px rgba(15, 23, 42, 0.04);
+    }
+
+    .header-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .brand-logo {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+      transition: var(--transition);
+    }
+
+    .brand-text h1 {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-text span {
+      font-size: 0.74rem;
+      color: var(--accent-gold);
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      display: block;
+      text-transform: uppercase;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      gap: 28px;
+    }
+
+    .nav-link {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--text-dark);
+      padding: 6px 0;
+      position: relative;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--primary);
+    }
+
+    .nav-link.active:after {
+      content: '';
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--primary);
+      border-radius: 2px;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+
+    .btn-donate-nav {
+      background: var(--primary);
+      color: #fff !important;
+      padding: 9px 20px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.92rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(6, 107, 65, 0.2);
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-donate-nav:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(6, 107, 65, 0.3);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: #F1F5F3;
+      border: 1px solid #CBD5E1;
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-sm);
+      font-size: 1.25rem;
+      color: var(--primary);
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition);
+      flex-shrink: 0;
+    }
+
+    .mobile-menu-btn:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    /* Mobile Drawer */
+    .mobile-drawer {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 80%;
+      max-width: 320px;
+      height: 100vh;
+      background: #fff;
+      z-index: 2000;
+      padding: 24px;
+      box-shadow: -4px 0 25px rgba(0, 0, 0, 0.15);
+      transition: right 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mobile-drawer.open {
+      right: 0;
+    }
+
+    .drawer-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1999;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .drawer-backdrop.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .drawer-links {
+      list-style: none;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .drawer-links a {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      display: block;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .drawer-links a.active {
+      color: var(--primary);
+    }
+
+    /* ========================================================
+       PAGE BANNER (Clean English UI)
+       ======================================================== */
+    .page-banner {
+      background: linear-gradient(135deg, #044B2D 0%, #066B41 100%);
+      color: #fff;
+      padding: 60px 0;
+      text-align: center;
+      position: relative;
+    }
+
+    .page-badge {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.15);
+      color: #FDF6E2;
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 5px 16px;
+      border-radius: var(--radius-full);
+      margin-bottom: 16px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .page-banner h1 {
+      font-size: clamp(2rem, 3.8vw, 3rem);
+      font-weight: 800;
+      margin-bottom: 12px;
+      line-height: 1.25;
+    }
+
+    .page-banner p {
+      font-size: 1.1rem;
+      color: #E2E8F0;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .banner-motto-box {
+      margin-top: 24px;
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.2);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: var(--radius-md);
+      padding: 12px 24px;
+      color: #FDF6E2;
+      font-weight: 600;
+      font-size: 1.05rem;
+      font-family: 'Anek Malayalam', sans-serif;
+    }
+
+    /* ========================================================
+       SECTION COMMON STYLES
+       ======================================================== */
+    .section {
+      padding: 70px 0;
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 45px auto;
+    }
+
+    .badge-primary {
+      display: inline-block;
+      background: var(--accent-green-soft);
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 0.82rem;
+      padding: 5px 14px;
+      border-radius: var(--radius-full);
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      border: 1px solid var(--border-green);
+    }
+
+    .section-title {
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-weight: 800;
+      color: var(--text-dark);
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .section-title span {
+      color: var(--primary);
+    }
+
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+    }
+
+    /* ========================================================
+       ABOUT PHILOSOPHY & STORY SECTION
+       ======================================================== */
+    /* ========================================================
+       ABOUT PHILOSOPHY & STORY SECTION (Clear Elevated Cards)
+       ======================================================== */
+    .about-story-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+
+    .story-card {
+      background: #fff;
+      padding: 44px;
+      border-radius: var(--radius-lg);
+      border: 1.5px solid #CBD5E1;
+      box-shadow: 0 6px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    .story-card p {
+      color: #334155;
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+      line-height: 1.9;
+    }
+
+    .highlight-quote {
+      background: var(--accent-gold-light);
+      border-left: 5px solid var(--accent-gold);
+      padding: 22px 26px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      margin: 26px 0;
+      font-weight: 700;
+      color: #78350F;
+      font-size: 1.08rem;
+      line-height: 1.95;
+      font-family: 'Anek Malayalam', sans-serif;
+    }
+
+    .poster-frame {
+      background: #fff;
+      padding: 16px;
+      border-radius: var(--radius-lg);
+      border: 1.5px solid #CBD5E1;
+      box-shadow: 0 8px 28px rgba(15, 23, 42, 0.08);
+      text-align: center;
+    }
+
+    .poster-frame img {
+      border-radius: var(--radius-md);
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .poster-caption {
+      margin-top: 14px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    /* ========================================================
+       VISION & MISSION CARDS (High-Contrast Differentiated Cards)
+       ======================================================== */
+    .vm-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 24px;
+    }
+
+    .vm-card {
+      background: #fff;
+      border-radius: var(--radius-lg);
+      padding: 40px;
+      border: 1.5px solid #CBD5E1;
+      border-top: 5px solid var(--primary);
+      box-shadow: 0 6px 24px rgba(15, 23, 42, 0.06);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+
+    .vm-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(6, 107, 65, 0.12);
+    }
+
+    .vm-card.mission {
+      border-top-color: var(--accent-gold);
+    }
+
+    .vm-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .vm-card.mission .vm-badge {
+      color: #92400E;
+    }
+
+    .vm-card h3 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: #0F172A;
+      margin-bottom: 16px;
+    }
+
+    .vm-quote-box {
+      background: #F8FAF9;
+      border: 1px solid #D1E5DA;
+      border-left: 4px solid var(--primary);
+      padding: 20px 24px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 1.08rem;
+      color: #0F172A;
+      margin-bottom: 20px;
+      font-family: 'Anek Malayalam', sans-serif;
+      line-height: 1.9;
+      font-weight: 500;
+    }
+
+    .vm-card.mission .vm-quote-box {
+      background: #FFFDF8;
+      border-color: #FDE68A;
+      border-left: 4px solid var(--accent-gold);
+    }
+
+    .vm-desc {
+      color: #334155;
+      font-size: 0.98rem;
+      line-height: 1.8;
+      margin-top: auto;
+    }
+
+    /* ========================================================
+       7 STRATEGIC PILLARS (Clear Numbered Cards)
+       ======================================================== */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .pillar-card {
+      background: #fff;
+      border-radius: var(--radius-lg);
+      padding: 30px;
+      border: 1.5px solid #CBD5E1;
+      box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+      transition: var(--transition);
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .pillar-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 32px rgba(6, 107, 65, 0.12);
+      border-color: var(--primary);
+    }
+
+    .pillar-num {
+      width: 48px;
+      height: 48px;
+      background: var(--primary);
+      color: #fff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      font-weight: 800;
+      flex-shrink: 0;
+      box-shadow: 0 4px 12px rgba(6, 107, 65, 0.25);
+    }
+
+    .pillar-info h4 {
+      font-size: 1.2rem;
+      font-weight: 800;
+      color: #0F172A;
+      margin-bottom: 6px;
+      line-height: 1.35;
+    }
+
+    .pillar-ml-tag {
+      display: inline-block;
+      background: var(--accent-green-soft);
+      color: var(--primary);
+      border: 1px solid #C4E2D3;
+      font-weight: 700;
+      font-size: 0.86rem;
+      padding: 3px 12px;
+      border-radius: var(--radius-full);
+      margin-bottom: 12px;
+      font-family: 'Anek Malayalam', sans-serif;
+    }
+
+    .pillar-info p {
+      font-size: 0.98rem;
+      color: #334155;
+      line-height: 1.8;
+      font-family: 'Anek Malayalam', sans-serif;
+    }
+
+    /* ========================================================
+       KERALAAYANAM MANIFESTO BANNER
+       ======================================================== */
+    .manifesto-section {
+      background: #fff;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      padding: 70px 0;
+    }
+
+    .manifesto-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .manifesto-content h3 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-bottom: 14px;
+      line-height: 1.3;
+    }
+
+    .manifesto-poetry {
+      background: #F8FAF8;
+      border-left: 4px solid var(--primary);
+      padding: 20px 24px;
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 1.05rem;
+      line-height: 1.95;
+      font-family: 'Anek Malayalam', sans-serif;
+      margin: 20px 0;
+    }
+
+    /* ========================================================
+       CALL TO ACTION STRIP
+       ======================================================== */
+    .cta-strip {
+      background: var(--primary);
+      color: #fff;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .cta-strip h2 {
+      font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+
+    .cta-strip p {
+      font-size: 1.1rem;
+      color: #E2E8F0;
+      max-width: 750px;
+      margin: 0 auto 28px auto;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      padding: 12px 28px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      border: none;
+      cursor: pointer;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .btn-primary:hover {
+      background: var(--primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--text-dark);
+      border: 2px solid var(--border-color);
+      padding: 12px 28px;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: var(--accent-green-soft);
+    }
+
+    /* ========================================================
+       FOOTER (Clean English UI)
+       ======================================================== */
+    .footer {
+      background: #0B1912;
+      color: #CBD5E1;
+      padding: 65px 0 25px 0;
+      font-size: 0.95rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+      gap: 36px;
+      margin-bottom: 40px;
+    }
+
+    .footer-col h4 {
+      color: #fff;
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 18px;
+      position: relative;
+      padding-bottom: 8px;
+    }
+
+    .footer-col h4:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 32px;
+      height: 2px;
+      background: var(--accent-gold);
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-links a {
+      color: #CBD5E1;
+    }
+
+    .footer-links a:hover {
+      color: var(--accent-gold);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 20px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #94A3B8;
+    }
+
+    /* Donation Modal */
+    .modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 3000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .modal.active {
+      display: flex;
+    }
+
+    .modal-box {
+      background: #fff;
+      width: 100%;
+      max-width: 520px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .modal-header {
+      background: var(--primary);
+      color: #fff;
+      padding: 18px 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .modal-close {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.4rem;
+      cursor: pointer;
+    }
+
+    .modal-body {
+      padding: 24px;
+    }
+
+    .bank-card {
+      background: #F8FAFC;
+      border: 1px dashed var(--primary);
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      margin-bottom: 18px;
+    }
+
+    .bank-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      border-bottom: 1px solid #E2E8F0;
+      font-size: 0.92rem;
+    }
+
+    .bank-row:last-child {
+      border-bottom: none;
+    }
+
+    /* ========================================================
+       RESPONSIVE MEDIA QUERIES (FULL DEVICE COMPATIBILITY)
+       ======================================================== */
+    @media (max-width: 1024px) {
+      .nav-menu {
+        gap: 18px;
+      }
+      .nav-link {
+        font-size: 0.9rem;
+      }
+      .btn-donate-nav {
+        padding: 8px 16px;
+        font-size: 0.86rem;
+      }
+    }
+
+    @media (max-width: 992px) {
+      .nav-menu {
+        display: none !important;
+      }
+      .mobile-menu-btn {
+        display: inline-flex !important;
+      }
+      .about-story-grid, .manifesto-grid, .vm-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .story-card, .vm-card {
+        padding: 24px;
+      }
+      .pillars-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .topbar {
+        padding: 6px 0;
+        font-size: 0.8rem;
+      }
+      .topbar-info {
+        gap: 10px;
+        justify-content: center;
+        width: 100%;
+      }
+      .topbar-social {
+        display: none;
+      }
+      .header-inner {
+        padding: 8px 0;
+      }
+      .brand-logo {
+        height: 38px;
+      }
+      .brand-text h1 {
+        font-size: 1.15rem;
+      }
+      .brand-text span {
+        font-size: 0.65rem;
+      }
+      .btn-donate-nav {
+        padding: 7px 12px;
+        font-size: 0.8rem;
+        gap: 5px;
+      }
+      .mobile-menu-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 1.1rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .brand-text span {
+        display: none;
+      }
+      .donate-text-now {
+        display: none;
+      }
+      .btn-donate-nav {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= TOPBAR ================= -->
+  <div class="topbar">
+    <div class="container">
+      <div class="topbar-info">
+        <a href="tel:+919946889946"><i class="fa fa-phone"></i> +91 9946889946</a>
+        <a href="tel:+918589813566"><i class="fa fa-phone"></i> +91 8589813566</a>
+        <a href="mailto:punarjanitrust8@gmail.com"><i class="fa fa-envelope"></i> punarjanitrust8@gmail.com</a>
+      </div>
+      <div class="topbar-social">
+        <span>Follow Us:</span>
+        <a href="https://instagram.com/punarjanicharitable" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@Punarjani_charitable" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= HEADER (CLEAN ENGLISH UI) ================= -->
+  <header class="header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="brand">
+          <img src="assets/images/punarjani-logo.png" alt="Punarjani Logo" class="brand-logo" onerror="this.src='assets/images/keralaayanam_logo.jpg'">
+          <div class="brand-text">
+            <h1>PUNARJANI</h1>
+            <span>CHARITABLE TRUST</span>
+          </div>
+        </a>
+
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About Us</a></li>
+          <li><a href="initiatives.html" class="nav-link">Initiatives</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+
+        <div class="header-actions">
+          <button class="btn-donate-nav" onclick="openDonateModal()">
+            <i class="fa fa-heart"></i> <span class="donate-btn-text">Donate<span class="donate-text-now"> Now</span></span>
+          </button>
+          <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Toggle Navigation Menu">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= MOBILE DRAWER ================= -->
+  <div class="drawer-backdrop" id="drawerBackdrop" onclick="toggleMenu()"></div>
+  <div class="mobile-drawer" id="mobileDrawer">
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 16px;">
+      <div class="brand">
+        <img src="assets/images/punarjani-logo.png" alt="Punarjani Logo" style="height: 38px;" onerror="this.src='assets/images/keralaayanam_logo.jpg'">
+        <div class="brand-text">
+          <h2 style="font-size: 1.2rem; color: var(--primary);">PUNARJANI</h2>
+        </div>
+      </div>
+      <button onclick="toggleMenu()" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-dark);">&times;</button>
+    </div>
+    <ul class="drawer-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html" class="active">About Us</a></li>
+      <li><a href="initiatives.html">Initiatives</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div style="margin-top: 30px;">
+      <button class="btn-donate-nav" style="width: 100%; justify-content: center;" onclick="toggleMenu(); openDonateModal();">
+        <i class="fa fa-heart"></i> Donate Now
+      </button>
+    </div>
+  </div>
+
+  <!-- ================= PAGE BANNER ================= -->
+  <div class="page-banner">
+    <div class="container">
+      <span class="page-badge">About Punarjani</span>
+      <h1>A Pan-Indian Vision Rooted in Kerala</h1>
+      <p>From roots to wisdom, from diversity to unity, from India to the world.</p>
+      <div class="banner-motto-box">
+        “വേരുകളിൽ നിന്ന് വിജ്ഞാനത്തിലേക്ക് • വൈവിധ്യങ്ങളിൽ നിന്ന് ഐക്യത്തിലേക്ക് • ഇന്ത്യയിൽ നിന്ന് ലോകത്തിലേക്ക്”
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MAIN PHILOSOPHY & STORY ================= -->
+  <section class="section">
+    <div class="container">
+      
+      <div class="about-story-grid">
+        <div class="story-card">
+          <span class="badge-primary">Our Philosophy & Genesis</span>
+          <h2 style="font-size: 1.85rem; font-weight: 800; color: var(--text-dark); margin-bottom: 18px; line-height: 1.35;">
+            കേരളത്തിന്റെ മണ്ണിൽ നിന്ന് ആരംഭിച്ച് <span style="color: var(--primary);">ലോകത്തിലേക്ക്</span>
+          </h2>
+          <p class="ml-text">
+            പുനർജനി കേരളത്തിൽ നിന്ന് ആരംഭിക്കുന്ന ഒരു ആശയമാണ്; എന്നാൽ അതിന്റെ സ്വപ്നം കേരളത്തിന്റെ അതിരുകൾക്കപ്പുറമാണ് — ഭാരതത്തിലേക്ക്, ഭാരതത്തിന്റെ വൈവിധ്യങ്ങളിലൂടെ ലോകത്തിലേക്ക്.
+          </p>
+          <p class="ml-text">
+            ഭാഷകൾ വ്യത്യസ്തമാണ്. സംസ്കാരങ്ങൾ വ്യത്യസ്തമാണ്. വസ്ത്രധാരണവും ഭക്ഷണരീതികളും കലകളും ആചാരങ്ങളും അനുഷ്ഠാനങ്ങളും ജീവിതരീതികളും വ്യത്യസ്തമാണ്. എന്നാൽ ഈ വൈവിധ്യങ്ങളുടെ ആഴത്തിൽ നമ്മെ ഒരുമിപ്പിക്കുന്ന ഒരു വലിയ തിരിച്ചറിവുണ്ട് — <strong>നാം ഭാരതത്തിന്റെ ഭാഗമാണ്.</strong>
+          </p>
+          <div class="highlight-quote">
+            “വൈവിധ്യത്തിൽ ഏകത” (Unity in Diversity) എന്ന ഭാരതീയ ആശയത്തെ അടിസ്ഥാനമാക്കി, രാജ്യത്തിന്റെ ഓരോ പ്രദേശത്തിന്റെയും തനതായ അറിവും പാരമ്പര്യവും പ്രകൃതി സമ്പത്തും മനുഷ്യശേഷിയും പുതിയ തലമുറയുടെ ചിന്തകളും സാങ്കേതികവിദ്യയും നവീകരണവും തമ്മിൽ ബന്ധിപ്പിക്കുന്ന ഒരു ദേശീയ വേദിയായാണ് പുനർജനി വിഭാവനം ചെയ്യുന്നത്.
+          </div>
+          <p class="ml-text">
+            കേരളത്തിന്റെ മണ്ണിൽ നിന്ന് ആരംഭിച്ച്, ഇന്ത്യയുടെ വിവിധ സംസ്ഥാനങ്ങളിലേക്കും ജനവിഭാഗങ്ങളിലേക്കും അറിവുകളിലേക്കും സംസ്കാരങ്ങളിലേക്കും സഞ്ചരിച്ച്, പരസ്പരം അറിയാനും മനസ്സിലാക്കാനും പങ്കുവെക്കാനും ഒരുമിച്ച് വളരാനും കഴിയുന്ന ഒരു പുതിയ യാത്ര.
+          </p>
+          <p style="font-weight: 700; color: var(--primary);" class="ml-text">
+            പ്രാദേശിക വേരുകളിൽ നിന്ന് ദേശീയ ഐക്യത്തിലേക്ക്… ദേശീയ സാധ്യതകളിൽ നിന്ന് ആഗോള മുന്നേറ്റത്തിലേക്ക്… ഇതാണ് പുനർജനിയുടെ യാത്ര.
+          </p>
+        </div>
+
+        <div>
+          <div class="poster-frame">
+            <img src="assets/images/keralaayanam_roots_quote.jpg" alt="വേരുകളിലേക്ക് ഒരു മടക്കം" onerror="this.src='assets/images/keralaayanam_poster.jpg'">
+            <div class="poster-caption">
+              വേരുകളിലേക്ക് ഒരു മടക്കം — Return to our Roots
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= VISION & MISSION CARDS ================= -->
+      <div class="section-header">
+        <span class="badge-primary">Foundation Principles</span>
+        <h2 class="section-title">Our <span>Vision & Mission</span></h2>
+        <p class="section-subtitle">The foundational ideals and driving purposes behind Punarjani Charitable Trust.</p>
+      </div>
+
+      <div class="vm-grid">
+        
+        <!-- Vision Card -->
+        <div class="vm-card">
+          <div class="vm-badge">
+            <i class="fa fa-eye"></i> Our Vision • ദർശനം
+          </div>
+          <h3>A Reawakened, Self-Reliant Society</h3>
+          <div class="vm-quote-box">
+            “വൈവിധ്യങ്ങളുടെ വർണ്ണപ്പകിട്ടിൽ ഏകതയുടെ മഹാസ്വരം കണ്ടെത്തി, ഭാരതത്തിന്റെ മണ്ണിൽ പിറന്ന അറിവിനെയും പാരമ്പര്യത്തെയും മനുഷ്യശേഷിയെയും നവചിന്തയുടെയും സാങ്കേതികവിദ്യയുടെയും ചിറകുകളിലേറ്റി, സമത്വവും സുസ്ഥിരതയും സർഗാത്മകതയും നിറഞ്ഞ ഒരു നവഭാരതത്തിന്റെ ഭാവിയിലേക്ക് സമൂഹത്തെ നയിക്കുക.”
+          </div>
+          <p class="vm-desc">
+            <strong>Core Meaning:</strong> Discovering the boundless harmony beneath India's cultural tapestry, empowering indigenous knowledge, human potential, and technology to build an equitable, sustainable future for all.
+          </p>
+        </div>
+
+        <!-- Mission Card -->
+        <div class="vm-card mission">
+          <div class="vm-badge">
+            <i class="fa fa-bullseye"></i> Our Mission • ദൗത്യം
+          </div>
+          <h3>Empowerment, Heritage & Progress</h3>
+          <div class="vm-quote-box">
+            “മണ്ണിനെ മാനിച്ച്, മനുഷ്യനെ ചേർത്തുപിടിച്ച്, അറിവിനെ ഉണർത്തി, കഴിവുകളെ വളർത്തി, പാരമ്പര്യത്തെ പുതുമയുമായി ചേർത്ത്, പ്രാദേശിക സാധ്യതകളെ ദേശീയ ശക്തിയാക്കി, ദേശീയ ശക്തിയെ ആഗോള സാധ്യതകളാക്കി മാറ്റുന്ന ഒരു ജനകീയ വികസനയാത്രയ്ക്ക് നേതൃത്വം നൽകുക.”
+          </div>
+          <p class="vm-desc">
+            <strong>Core Meaning:</strong> Honoring our soil, embracing community welfare, awakening knowledge, nurturing skills, and elevating local agrarian and cultural strengths into national pride and global progress.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 7 STRATEGIC PILLARS ================= -->
+  <section class="section" style="background: #F1F6F3; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="badge-primary">Strategic Framework</span>
+        <h2 class="section-title">The <span>7 Pillars</span> of Transformation</h2>
+        <p class="section-subtitle">സപ്ത ദൗത്യങ്ങൾ — The seven core pillars guiding all Punarjani initiatives.</p>
+      </div>
+
+      <div class="pillars-grid">
+        
+        <!-- Pillar 1 -->
+        <div class="pillar-card">
+          <div class="pillar-num">1</div>
+          <div class="pillar-info">
+            <h4>Cultural Heritage Preservation</h4>
+            <span class="pillar-ml-tag">സംസ്കാരങ്ങളും പാരമ്പര്യങ്ങളും</span>
+            <p>ഭാരതത്തിന്റെ വൈവിധ്യമാർന്ന സംസ്കാരങ്ങളും പാരമ്പര്യങ്ങളും കണ്ടെത്തുകയും സംരക്ഷിക്കുകയും പുതുതലമുറയിലേക്ക് പകരുകയും ചെയ്യുക.</p>
+          </div>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="pillar-card">
+          <div class="pillar-num">2</div>
+          <div class="pillar-info">
+            <h4>Youth & Student Empowerment</h4>
+            <span class="pillar-ml-tag">വിദ്യാർത്ഥി & യുവജന വികാസം</span>
+            <p>വിദ്യാർത്ഥികളുടെയും യുവജനങ്ങളുടെയും അറിവും കഴിവും സർഗാത്മകതയും സംരംഭകത്വവും പാഠപുസ്തകങ്ങൾക്കപ്പുറം വികസിപ്പിക്കുക.</p>
+          </div>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="pillar-card">
+          <div class="pillar-num">3</div>
+          <div class="pillar-info">
+            <h4>Farmers & Rural Agrarian Economy</h4>
+            <span class="pillar-ml-tag">കർഷകരും ഗ്രാമീണ സമ്പത്തും</span>
+            <p>കർഷകരെയും ഗ്രാമീണ സമൂഹങ്ങളെയും ശക്തിപ്പെടുത്തി, ഭാരതത്തിന്റെ തനതായ കാർഷിക സമ്പത്തിനെ മൂല്യവർധിത ഉൽപ്പന്നങ്ങളാക്കി ലോകവിപണിയിലേക്ക് എത്തിക്കുക.</p>
+          </div>
+        </div>
+
+        <!-- Pillar 4 -->
+        <div class="pillar-card">
+          <div class="pillar-num">4</div>
+          <div class="pillar-info">
+            <h4>Sustainable Ecological Development</h4>
+            <span class="pillar-ml-tag">സുസ്ഥിര വികസന മാതൃകകൾ</span>
+            <p>പ്രകൃതിയെയും പൈതൃകത്തെയും മനുഷ്യവിഭവശേഷിയെയും സംരക്ഷിച്ചുകൊണ്ട് സുസ്ഥിര വികസനത്തിന്റെ മാതൃകകൾ സൃഷ്ടിക്കുക.</p>
+          </div>
+        </div>
+
+        <!-- Pillar 5 -->
+        <div class="pillar-card">
+          <div class="pillar-num">5</div>
+          <div class="pillar-info">
+            <h4>Inter-State Cultural Exchange</h4>
+            <span class="pillar-ml-tag">അന്തർസംസ്ഥാന സാംസ്കാരിക വേദി</span>
+            <p>വിവിധ സംസ്ഥാനങ്ങളിലെ ഭാഷ, കല, ഭക്ഷണം, വസ്ത്രം, ആചാരം, അനുഷ്ഠാനം, ജീവിതരീതി, അറിവ് എന്നിവ പരസ്പരം പരിചയപ്പെടുത്തുന്ന വേദികൾ സൃഷ്ടിക്കുക.</p>
+          </div>
+        </div>
+
+        <!-- Pillar 6 -->
+        <div class="pillar-card">
+          <div class="pillar-num">6</div>
+          <div class="pillar-info">
+            <h4>Science, Tech & Innovation</h4>
+            <span class="pillar-ml-tag">ശാസ്ത്രവും സാങ്കേതികവിദ്യയും</span>
+            <p>ശാസ്ത്രം, സാങ്കേതികവിദ്യ, ഗവേഷണം, നവീകരണം എന്നിവയെ സമൂഹത്തിന്റെ യഥാർത്ഥ ആവശ്യങ്ങളുമായി ബന്ധിപ്പിക്കുക.</p>
+          </div>
+        </div>
+
+        <!-- Pillar 7 -->
+        <div class="pillar-card">
+          <div class="pillar-num">7</div>
+          <div class="pillar-info">
+            <h4>National & Global Collaborations</h4>
+            <span class="pillar-ml-tag">ആഗോള സഹകരണ കൂട്ടായ്മകൾ</span>
+            <p>പ്രാദേശികതയെ അതിജീവിച്ച് ദേശീയതയിലേക്കും, ദേശീയതയിൽ നിന്ന് ആഗോള സഹകരണത്തിലേക്കും വളരുന്ന കൂട്ടായ്മകൾ രൂപപ്പെടുത്തുക.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= KERALAAYANAM MANIFESTO BANNER ================= -->
+  <section class="manifesto-section">
+    <div class="container">
+      <div class="manifesto-grid">
+        
+        <div>
+          <img src="assets/images/keralaayanam_collage_manifesto.jpg" alt="Keralaayanam Manifesto Collage" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-md); border: 1px solid var(--border-color);" onerror="this.src='assets/images/keralaayanam_poster.jpg'">
+        </div>
+
+        <div class="manifesto-content">
+          <span class="badge-primary">Flagship Heritage Movement</span>
+          <h3>കേരളായനം — നമ്മുടെ മണ്ണ് • നമ്മുടെ മനുഷ്യർ • നമ്മുടെ ഭാവി</h3>
+          <p style="color: var(--text-body); font-size: 1.05rem; line-height: 1.8;">
+            Keralaayanam is Punarjani Trust's historic cultural expedition across all 14 districts of Kerala, designed to rediscover roots, connect community artisans, and unite generations.
+          </p>
+          
+          <div class="manifesto-poetry">
+            “മണ്ണും മനസ്സും തൊട്ടുണർത്താൻ ഒരു യാത്ര…<br>
+            വേരുകൾ തേടി, ചരിത്രമുറങ്ങുന്ന വഴികളിലൂടെ,<br>
+            നാടിൻ്റെ തുടിപ്പുകൾ അനുഭവിച്ചറിഞ്ഞ്,<br>
+            പുതിയ തലമുറയെ പൈതൃകത്തിലേക്ക് കൈപിടിച്ചുയർത്താൻ,<br>
+            ഭാരതത്തിന്റെ മണ്ണിലൂടെ ഒരു സാംസ്കാരിക പര്യടനം!”
+          </div>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap; margin-top: 20px;">
+            <a href="initiatives.html#keralaayanam" class="btn-primary">
+              Explore Keralaayanam <i class="fa fa-arrow-right"></i>
+            </a>
+            <a href="contact.html#volunteer" class="btn-outline">
+              Join as Volunteer
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CALL TO ACTION STRIP ================= -->
+  <section class="cta-strip">
+    <div class="container">
+      <h2>Join Hands with Punarjani Foundation</h2>
+      <p class="ml-text">
+        “മണ്ണിനെയും മനുഷ്യനെയും ചേർത്തുപിടിച്ച് ഒരു നവഭാരത സൃഷ്ടിക്കായി നമുക്ക് കൈകോർക്കാം.”
+      </p>
+      <div class="btn-group">
+        <button class="btn-primary" style="background: #fff; color: var(--primary);" onclick="openDonateModal()">
+          <i class="fa fa-heart"></i> Donate Now
+        </button>
+        <a href="contact.html" class="btn-outline" style="color: #fff; border-color: #fff; background: transparent;">
+          <i class="fa fa-envelope"></i> Contact Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER (CLEAN ENGLISH UI) ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-col">
+          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
+            <img src="assets/images/punarjani-logo.png" alt="Punarjani" style="height: 42px;" onerror="this.src='assets/images/keralaayanam_logo.jpg'">
+            <h3 style="color: #fff; font-size: 1.3rem;">PUNARJANI</h3>
+          </div>
+          <p style="color: #94A3B8; font-size: 0.92rem; line-height: 1.8;">
+            A Pan-Indian non-profit foundation rooted in Kerala, dedicated to cultural preservation, youth empowerment, agricultural development, and inclusive healthcare.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us & Vision</a></li>
+            <li><a href="initiatives.html">Key Initiatives</a></li>
+            <li><a href="contact.html">Contact & Donate</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Key Programs</h4>
+          <ul class="footer-links">
+            <li><a href="initiatives.html#keralaayanam">Keralaayanam Expedition</a></li>
+            <li><a href="initiatives.html#pravaham">Pravaham Student Program</a></li>
+            <li><a href="initiatives.html#agro">Agro Producer Company</a></li>
+            <li><a href="initiatives.html#services">Special Education & Care Home</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Headquarters</h4>
+          <p style="color: #CBD5E1; margin-bottom: 8px;">
+            <strong>Punarjani Charitable Trust</strong><br>
+            Karunagappally, Kollam District,<br>
+            Kerala, India - 690518
+          </p>
+          <p style="color: #CBD5E1; margin-bottom: 4px;">
+            Phone: <strong>+91 9946889946, +91 8589813566</strong>
+          </p>
+          <p style="color: #CBD5E1;">
+            Email: <strong>punarjanitrust8@gmail.com</strong>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Punarjani Charitable Trust. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= DONATION MODAL ================= -->
+  <div class="modal" id="donateModal">
+    <div class="modal-box" style="max-width: 480px;">
+      <div class="modal-header">
+        <h3 style="font-size: 1.2rem; color: #fff;"><i class="fa fa-heart"></i> Donate to Punarjani</h3>
+        <button class="modal-close" onclick="closeDonateModal()">&times;</button>
+      </div>
+      <div class="modal-body" style="text-align: center;">
+        <p style="margin-bottom: 12px; color: var(--text-body); font-size: 0.95rem;">
+          Scan with any UPI app (GPay, PhonePe, Paytm, BHIM) to contribute any amount directly:
+        </p>
+        
+        <div style="background: #fff; border: 1.5px solid #CBD5E1; border-radius: var(--radius-md); padding: 14px; display: inline-block; margin-bottom: 12px; box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);">
+          <img src="assets/images/punarjani_upi_qr.png" alt="Punarjani UPI QR" style="width: 180px; height: 180px; display: block; margin: 0 auto; object-fit: contain;">
+          <span style="display: inline-flex; align-items: center; gap: 5px; margin-top: 8px; font-size: 0.8rem; font-weight: 700; color: #03543F; background: #DEF7EC; padding: 4px 12px; border-radius: 20px;">
+            <i class="fa fa-qrcode"></i> Scan to Pay Any Amount
+          </span>
+        </div>
+
+        <div style="background: #F8FAFC; border: 1.5px solid #CBD5E1; border-radius: var(--radius-sm); padding: 10px 14px; margin-bottom: 12px; text-align: left; display: flex; justify-content: space-between; align-items: center; gap: 8px;">
+          <div>
+            <span style="display: block; font-size: 0.72rem; text-transform: uppercase; font-weight: 700; color: var(--text-muted);">Trust UPI ID</span>
+            <code style="font-size: 0.92rem; font-weight: 700; color: var(--primary);">punarjanitrust8@gmail.com</code>
+          </div>
+          <button type="button" onclick="copyUpiId('punarjanitrust8@gmail.com', this)" style="background: var(--primary); color: #fff; border: none; padding: 6px 12px; border-radius: 4px; font-weight: 700; font-size: 0.8rem; cursor: pointer; display: inline-flex; align-items: center; gap: 4px;">
+            <i class="fa fa-copy"></i> Copy
+          </button>
+        </div>
+
+        <a href="upi://pay?pa=punarjanitrust8@gmail.com&pn=Punarjani%20Charitable%20Trust&cu=INR" class="btn-primary" style="width: 100%; justify-content: center; margin-bottom: 12px; background: #0F172A;">
+          <i class="fa fa-mobile-screen-button"></i> Tap to Pay via UPI App (Mobile)
+        </a>
+
+        <div style="font-size: 0.84rem; color: var(--text-muted); margin-bottom: 12px;">
+          Beneficiary: <strong>Punarjani Charitable Trust</strong>
+        </div>
+
+        <a href="contact.html#donate" style="display: inline-block; font-size: 0.88rem; font-weight: 700; color: var(--primary); text-decoration: underline;" onclick="closeDonateModal()">
+          View Official Bank Details & Tax Receipt Info →
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= INLINE JAVASCRIPT ================= -->
+  <script>
+    function toggleMenu() {
+      const drawer = document.getElementById('mobileDrawer');
+      const backdrop = document.getElementById('drawerBackdrop');
+      drawer.classList.toggle('open');
+      backdrop.classList.toggle('open');
+      document.body.style.overflow = drawer.classList.contains('open') ? 'hidden' : '';
+    }
+
+    function openDonateModal() {
+      document.getElementById('donateModal').classList.add('active');
+    }
+
+    function closeDonateModal() {
+      document.getElementById('donateModal').classList.remove('active');
+    }
+
+    function copyUpiId(text, btn) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => {
+          const original = btn.innerHTML;
+          btn.innerHTML = '<i class="fa fa-check"></i> Copied!';
+          btn.style.background = '#059669';
+          setTimeout(() => {
+            btn.innerHTML = original;
+            btn.style.background = '';
+          }, 2500);
+        }).catch(() => {
+          prompt('Copy this UPI ID:', text);
+        });
+      } else {
+        prompt('Copy this UPI ID:', text);
+      }
+    }
+
+    window.addEventListener('click', function(e) {
+      const modal = document.getElementById('donateModal');
+      if (e.target === modal) {
+        closeDonateModal();
+      }
+    });
+  </script>
+</body>
+</html>

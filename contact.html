@@ -4,37 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact & Donate | Punarjani Charitable Trust - Karunagappally, Kollam, Kerala</title>
-  <meta name="description" content="Contact Punarjani Charitable Trust, Karunagappally, Kollam, Kerala. Donate via direct UPI QR code or register as a volunteer for Keralaayanam and Pravah. Phone: +91 9946541555.">
+  <meta name="description" content="Contact Punarjani Charitable Trust, Karunagappally, Kollam. Donate directly via UPI (punarjanitrust8@gmail.com) or join as volunteer for Keralaayanam & Pravah (പ്രവാഹ്) initiatives. Phone: +91 9946541555.">
   
-  <!-- Google Fonts: Plus Jakarta Sans (English) & Anek Malayalam (Malayalam) -->
+  <!-- Google Fonts: Marcellus (Heritage Headings), Plus Jakarta Sans (English UI), Anek Malayalam (Malayalam) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@300;400;500;600;700;800&family=Marcellus&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
   <style>
     /* ========================================================
-       GLOBAL VARIABLES & MODERN CLEAN UI
+       GLOBAL HERITAGE PALETTE & MODERN UI
        ======================================================== */
     :root {
-      --primary: #066B41;
-      --primary-dark: #044b2d;
-      --primary-light: #0d8a55;
-      --accent-gold: #C59428;
-      --accent-gold-light: #FDF6E2;
-      --accent-green-soft: #E8F5EE;
+      --primary: #0A4533;          /* Deep Imperial Forest Green */
+      --primary-dark: #062E22;     /* Midnight Emerald */
+      --primary-light: #12634B;    /* Rich Botanical Green */
+      --accent-gold: #C59428;      /* Royal Antique Gold */
+      --accent-gold-dark: #9E7319; /* Deep Ochre Gold */
+      --accent-gold-light: #FAF2DD;/* Champagne Gold Tint */
+      --accent-rust: #8C3B24;      /* Warm Earthy Terracotta */
+      --accent-rust-light: #FDF1EB;/* Terracotta Cream */
+      --accent-green-soft: #E9F4EE;/* Soft Mint Green */
       --bg-white: #FFFFFF;
-      --bg-light: #F8FAF9;
-      --text-dark: #1E293B;
-      --text-body: #475569;
-      --text-muted: #64748B;
-      --border-color: #E2E8F0;
-      --border-green: #D1E5DA;
-      --shadow-sm: 0 2px 8px rgba(6, 107, 65, 0.05);
-      --shadow-md: 0 8px 24px rgba(6, 107, 65, 0.08);
-      --shadow-lg: 0 16px 40px rgba(6, 107, 65, 0.12);
+      --bg-light: #FAF8F3;         /* Warm Heritage Ivory */
+      --bg-parchment: #F5EFE6;     /* Natural Parchment */
+      --text-dark: #15241D;        /* Deep Forest Charcoal */
+      --text-body: #34463C;        /* Rich Earth Charcoal */
+      --text-muted: #65796D;       /* Muted Botanical Slate */
+      --border-color: #E7E0D3;     /* Warm Ivory Border */
+      --border-gold: #E5CCA0;      /* Antique Gold Accent Border */
+      --border-green: #C2DBCB;     /* Soft Green Border */
+      --shadow-sm: 0 2px 8px rgba(10, 69, 51, 0.05);
+      --shadow-md: 0 8px 24px rgba(10, 69, 51, 0.08);
+      --shadow-lg: 0 16px 40px rgba(10, 69, 51, 0.12);
       --radius-sm: 8px;
       --radius-md: 14px;
       --radius-lg: 20px;
@@ -59,8 +64,8 @@
     }
 
     h1, h2, h3, h4, h5, h6 {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      letter-spacing: -0.02em;
+      font-family: 'Marcellus', 'Plus Jakarta Sans', serif;
+      letter-spacing: -0.01em;
     }
 
     a {
@@ -77,25 +82,25 @@
 
     .container {
       width: 100%;
-      max-width: 1200px;
+      max-width: 1220px;
       margin: 0 auto;
       padding: 0 20px;
     }
 
     .ml-text {
       font-family: 'Anek Malayalam', sans-serif;
-      line-height: 1.9;
+      line-height: 1.95;
     }
 
     /* ========================================================
-       TOPBAR (Clean English)
+       TOPBAR
        ======================================================== */
     .topbar {
       background: var(--primary-dark);
       color: #E2E8F0;
       font-size: 0.88rem;
-      padding: 8px 0;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(197, 148, 40, 0.25);
     }
 
     .topbar .container {
@@ -108,7 +113,7 @@
 
     .topbar-info {
       display: flex;
-      gap: 20px;
+      gap: 22px;
       align-items: center;
       flex-wrap: wrap;
     }
@@ -117,45 +122,57 @@
       color: #E2E8F0;
       display: inline-flex;
       align-items: center;
-      gap: 6px;
+      gap: 7px;
+      font-weight: 500;
+    }
+
+    .topbar-info a i {
+      color: var(--accent-gold);
     }
 
     .topbar-info a:hover {
-      color: var(--accent-gold);
+      color: var(--accent-gold-light);
     }
 
     .topbar-social {
       display: flex;
-      gap: 14px;
+      gap: 16px;
       align-items: center;
+      font-size: 0.86rem;
+    }
+
+    .topbar-social span {
+      color: rgba(255,255,255,0.7);
     }
 
     .topbar-social a {
-      color: #E2E8F0;
-      font-size: 0.95rem;
+      color: #FAF2DD;
+      font-size: 1rem;
+      transition: var(--transition);
     }
 
     .topbar-social a:hover {
       color: var(--accent-gold);
+      transform: translateY(-1px);
     }
 
     /* ========================================================
-       HEADER & NAVIGATION (Clean English UI)
+       HEADER & NAVIGATION
        ======================================================== */
     .header {
-      background: var(--bg-white);
+      background: #FFFFFF;
       position: sticky;
       top: 0;
       z-index: 1000;
-      border-bottom: 1.5px solid #CBD5E1;
-      box-shadow: 0 2px 12px rgba(15, 23, 42, 0.04);
+      border-bottom: 1.5px solid var(--border-color);
+      box-shadow: 0 4px 18px rgba(10, 69, 51, 0.04);
     }
 
     .header-inner {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 12px 0;
+      padding: 14px 0;
       gap: 16px;
     }
 
@@ -164,44 +181,58 @@
       align-items: center;
       gap: 12px;
       flex-shrink: 0;
+      text-decoration: none;
     }
 
     .brand-logo {
-      height: 48px;
-      width: auto;
+      width: 52px;
+      height: 52px;
       object-fit: contain;
-      transition: var(--transition);
+      flex-shrink: 0;
+      border-radius: 50%;
+      filter: drop-shadow(0 2px 6px rgba(10, 69, 51, 0.15));
+      transition: transform 0.25s ease, filter 0.25s ease;
+      display: block;
+    }
+
+    .brand:hover .brand-logo {
+      transform: scale(1.05);
+      filter: drop-shadow(0 4px 10px rgba(197, 148, 40, 0.35));
     }
 
     .brand-text h1 {
-      font-size: 1.4rem;
+      font-size: 1.48rem;
       font-weight: 800;
       color: var(--primary);
-      line-height: 1.15;
-      letter-spacing: -0.02em;
+      line-height: 1.05;
+      letter-spacing: 0.03em;
+      font-family: 'Marcellus', 'Plus Jakarta Sans', serif;
     }
 
     .brand-text span {
-      font-size: 0.74rem;
-      color: var(--accent-gold);
+      font-size: 0.72rem;
+      color: var(--accent-gold-dark);
       font-weight: 700;
-      letter-spacing: 0.5px;
+      letter-spacing: 1.1px;
       display: block;
       text-transform: uppercase;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      margin-top: 3px;
+      white-space: nowrap;
     }
 
     .nav-menu {
       display: flex;
       align-items: center;
       list-style: none;
-      gap: 28px;
+      gap: 30px;
     }
 
     .nav-link {
       font-weight: 700;
       font-size: 0.95rem;
       color: var(--text-dark);
-      padding: 6px 0;
+      padding: 8px 0;
       position: relative;
     }
 
@@ -212,34 +243,34 @@
     .nav-link.active:after {
       content: '';
       position: absolute;
-      bottom: -6px;
+      bottom: -4px;
       left: 0;
       width: 100%;
       height: 3px;
-      background: var(--primary);
+      background: var(--accent-gold);
       border-radius: 2px;
     }
 
     .header-actions {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       flex-shrink: 0;
     }
 
     .btn-donate-nav {
-      background: var(--primary);
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
       color: #fff !important;
-      padding: 9px 20px;
+      padding: 10px 22px;
       border-radius: var(--radius-full);
       font-weight: 700;
       font-size: 0.92rem;
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      border: none;
+      border: 1px solid rgba(197, 148, 40, 0.4);
       cursor: pointer;
-      box-shadow: 0 2px 8px rgba(6, 107, 65, 0.2);
+      box-shadow: 0 4px 14px rgba(10, 69, 51, 0.2);
       transition: var(--transition);
       white-space: nowrap;
     }
@@ -247,15 +278,16 @@
     .btn-donate-nav:hover {
       background: var(--primary-dark);
       transform: translateY(-2px);
-      box-shadow: 0 4px 12px rgba(6, 107, 65, 0.3);
+      box-shadow: 0 6px 18px rgba(10, 69, 51, 0.3);
+      border-color: var(--accent-gold);
     }
 
     .mobile-menu-btn {
       display: none;
-      background: #F1F5F3;
-      border: 1px solid #CBD5E1;
-      width: 42px;
-      height: 42px;
+      background: var(--bg-parchment);
+      border: 1.5px solid var(--border-color);
+      width: 44px;
+      height: 44px;
       border-radius: var(--radius-sm);
       font-size: 1.25rem;
       color: var(--primary);
@@ -269,7 +301,6 @@
     .mobile-menu-btn:hover {
       background: var(--primary);
       color: #fff;
-      border-color: var(--primary);
     }
 
     /* Mobile Drawer */
@@ -277,13 +308,13 @@
       position: fixed;
       top: 0;
       right: -100%;
-      width: 80%;
+      width: 82%;
       max-width: 320px;
       height: 100vh;
       background: #fff;
       z-index: 2000;
       padding: 24px;
-      box-shadow: -4px 0 25px rgba(0, 0, 0, 0.15);
+      box-shadow: -6px 0 30px rgba(0,0,0,0.2);
       transition: right 0.3s ease;
       display: flex;
       flex-direction: column;
@@ -296,7 +327,8 @@
     .drawer-backdrop {
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.4);
+      background: rgba(10, 46, 34, 0.5);
+      backdrop-filter: blur(4px);
       z-index: 1999;
       opacity: 0;
       pointer-events: none;
@@ -313,71 +345,77 @@
       margin-top: 30px;
       display: flex;
       flex-direction: column;
-      gap: 18px;
+      gap: 16px;
     }
 
     .drawer-links a {
-      font-size: 1.15rem;
+      font-size: 1.05rem;
       font-weight: 700;
       color: var(--text-dark);
       display: block;
-      padding: 8px 0;
+      padding: 10px 0;
       border-bottom: 1px solid var(--border-color);
     }
 
     .drawer-links a.active {
       color: var(--primary);
+      border-bottom-color: var(--accent-gold);
     }
 
     /* ========================================================
        PAGE BANNER
        ======================================================== */
     .page-banner {
-      background: linear-gradient(135deg, #044B2D 0%, #066B41 100%);
+      background: linear-gradient(135deg, #062E22 0%, #0A4533 60%, #12634B 100%);
       color: #fff;
-      padding: 60px 0;
+      padding: 65px 0;
       text-align: center;
       position: relative;
+      border-bottom: 2px solid var(--accent-gold);
+      overflow: hidden;
     }
 
     .page-badge {
       display: inline-block;
-      background: rgba(255, 255, 255, 0.15);
-      color: #FDF6E2;
+      background: rgba(197, 148, 40, 0.22);
+      color: #FAF2DD;
       font-weight: 700;
       font-size: 0.85rem;
-      padding: 5px 16px;
+      padding: 6px 18px;
       border-radius: var(--radius-full);
       margin-bottom: 16px;
       letter-spacing: 1px;
       text-transform: uppercase;
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      border: 1px solid var(--border-gold);
+      font-family: 'Plus Jakarta Sans', sans-serif;
     }
 
     .page-banner h1 {
-      font-size: clamp(2rem, 3.8vw, 3rem);
+      font-size: clamp(2.2rem, 3.8vw, 3.2rem);
       font-weight: 800;
       margin-bottom: 12px;
       line-height: 1.25;
+      color: #FAF2DD;
     }
 
     .page-banner p {
-      font-size: 1.1rem;
+      font-size: 1.15rem;
       color: #E2E8F0;
-      max-width: 800px;
+      max-width: 820px;
       margin: 0 auto;
+      line-height: 1.8;
     }
 
     .banner-motto-box {
       margin-top: 24px;
       display: inline-block;
-      background: rgba(0, 0, 0, 0.2);
-      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: rgba(0, 0, 0, 0.28);
+      border: 1px solid var(--border-gold);
       border-radius: var(--radius-md);
-      padding: 12px 24px;
-      color: #FDF6E2;
-      font-weight: 600;
-      font-size: 1.05rem;
+      padding: 12px 28px;
+      color: #FAF2DD;
+      font-weight: 700;
+      font-size: 1.1rem;
       font-family: 'Anek Malayalam', sans-serif;
     }
 
@@ -390,29 +428,30 @@
 
     .section-header {
       text-align: center;
-      max-width: 800px;
+      max-width: 820px;
       margin: 0 auto 45px auto;
     }
 
     .badge-primary {
       display: inline-block;
-      background: var(--accent-green-soft);
-      color: var(--primary);
-      font-weight: 700;
+      background: var(--accent-gold-light);
+      color: var(--accent-gold-dark);
+      font-weight: 800;
       font-size: 0.82rem;
-      padding: 5px 14px;
+      padding: 6px 16px;
       border-radius: var(--radius-full);
-      margin-bottom: 10px;
-      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+      letter-spacing: 0.8px;
       text-transform: uppercase;
-      border: 1px solid var(--border-green);
+      border: 1px solid var(--border-gold);
+      font-family: 'Plus Jakarta Sans', sans-serif;
     }
 
     .section-title {
-      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      font-size: clamp(1.9rem, 3.2vw, 2.6rem);
       font-weight: 800;
       color: var(--text-dark);
-      margin-bottom: 10px;
+      margin-bottom: 12px;
       line-height: 1.3;
     }
 
@@ -423,6 +462,7 @@
     .section-subtitle {
       font-size: 1.05rem;
       color: var(--text-muted);
+      line-height: 1.7;
     }
 
     /* ========================================================
@@ -438,9 +478,9 @@
     .info-card {
       background: #FFFFFF;
       border-radius: var(--radius-lg);
-      padding: 30px;
-      border: 1.5px solid #CBD5E1;
-      box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+      padding: 32px 26px;
+      border: 1.5px solid var(--border-color);
+      box-shadow: 0 4px 16px rgba(10, 69, 51, 0.05);
       transition: var(--transition);
       display: flex;
       flex-direction: column;
@@ -449,8 +489,8 @@
 
     .info-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 8px 24px rgba(6, 107, 65, 0.12);
-      border-color: var(--primary);
+      box-shadow: 0 12px 28px rgba(10, 69, 51, 0.1);
+      border-color: var(--accent-gold);
     }
 
     .info-icon {
@@ -464,18 +504,18 @@
       justify-content: center;
       font-size: 1.4rem;
       margin-bottom: 18px;
-      border: 1px solid rgba(6, 107, 65, 0.2);
+      border: 1px solid var(--border-green);
     }
 
     .info-card h3 {
-      font-size: 1.25rem;
+      font-size: 1.3rem;
       font-weight: 800;
-      color: #0F172A;
+      color: var(--text-dark);
       margin-bottom: 8px;
     }
 
     .info-card p {
-      color: #334155;
+      color: var(--text-body);
       font-size: 0.96rem;
       line-height: 1.75;
     }
@@ -486,16 +526,10 @@
     .box-card {
       background: #FFFFFF;
       border-radius: var(--radius-lg);
-      padding: 40px;
-      border: 1.5px solid #CBD5E1;
-      box-shadow: 0 6px 24px rgba(15, 23, 42, 0.07);
+      padding: 44px;
+      border: 1.5px solid var(--border-gold);
+      box-shadow: 0 8px 30px rgba(10, 69, 51, 0.06);
       margin-bottom: 40px;
-    }
-
-    .two-col-form {
-      display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 40px;
     }
 
     .form-group {
@@ -514,11 +548,11 @@
       width: 100%;
       padding: 12px 16px;
       border-radius: var(--radius-sm);
-      border: 1.5px solid #CBD5E1;
+      border: 1.5px solid var(--border-color);
       font-family: inherit;
       font-size: 0.96rem;
-      background: #F8FAFC;
-      color: #0F172A;
+      background: var(--bg-light);
+      color: var(--text-dark);
       font-weight: 500;
       transition: var(--transition);
     }
@@ -527,7 +561,7 @@
       outline: none;
       background: #FFFFFF;
       border-color: var(--primary);
-      box-shadow: 0 0 0 3px rgba(6, 107, 65, 0.15);
+      box-shadow: 0 0 0 3px rgba(10, 69, 51, 0.15);
     }
 
     /* Simple QR & UPI Payment Layout */
@@ -540,20 +574,20 @@
 
     .qr-payment-card {
       background: #FFFFFF;
-      border: 1.5px solid #CBD5E1;
+      border: 1.5px solid var(--border-color);
       border-radius: var(--radius-md);
       padding: 28px 24px;
       text-align: center;
-      box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+      box-shadow: 0 4px 16px rgba(10, 69, 51, 0.05);
     }
 
     .qr-frame {
       display: inline-block;
       padding: 14px;
       background: #FFFFFF;
-      border: 2px solid var(--primary-light);
+      border: 2px solid var(--border-gold);
       border-radius: var(--radius-md);
-      box-shadow: 0 2px 10px rgba(6, 107, 65, 0.08);
+      box-shadow: 0 4px 14px rgba(10, 69, 51, 0.08);
       margin-bottom: 12px;
     }
 
@@ -569,18 +603,19 @@
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      background: #DEF7EC;
-      color: #03543F;
+      background: var(--accent-green-soft);
+      color: var(--primary);
       font-weight: 700;
       font-size: 0.84rem;
       padding: 5px 14px;
       border-radius: var(--radius-full);
       margin-top: 10px;
+      border: 1px solid var(--border-green);
     }
 
     .upi-id-box {
-      background: #F8FAFC;
-      border: 1.5px solid #CBD5E1;
+      background: var(--bg-light);
+      border: 1.5px solid var(--border-color);
       border-radius: var(--radius-sm);
       padding: 12px 14px;
       margin-top: 16px;
@@ -675,13 +710,13 @@
     }
 
     .app-tag {
-      background: #F1F5F9;
-      border: 1px solid #CBD5E1;
+      background: var(--bg-parchment);
+      border: 1px solid var(--border-color);
       padding: 4px 10px;
       border-radius: var(--radius-full);
       font-size: 0.76rem;
       font-weight: 700;
-      color: #334155;
+      color: var(--text-body);
       display: inline-flex;
       align-items: center;
       gap: 5px;
@@ -713,9 +748,9 @@
       gap: 14px;
       padding: 16px 20px;
       background: #FFFFFF;
-      border: 1.5px solid #CBD5E1;
+      border: 1.5px solid var(--border-color);
       border-radius: var(--radius-md);
-      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+      box-shadow: 0 2px 8px rgba(10, 69, 51, 0.04);
       margin-top: 16px;
     }
 
@@ -728,13 +763,13 @@
     .trust-guarantee-box h5 {
       font-size: 0.95rem;
       font-weight: 800;
-      color: #0F172A;
+      color: var(--text-dark);
       margin-bottom: 2px;
     }
 
     .trust-guarantee-box p {
       font-size: 0.85rem;
-      color: #475569;
+      color: var(--text-muted);
       line-height: 1.5;
       margin: 0;
     }
@@ -765,12 +800,12 @@
 
     /* Bank Credentials Card */
     .bank-details-card {
-      background: #F0FDF4;
-      border: 1.5px solid #86EFAC;
+      background: var(--accent-green-soft);
+      border: 1.5px solid var(--border-green);
       border-radius: var(--radius-md);
       padding: 26px;
       margin-bottom: 24px;
-      box-shadow: 0 2px 10px rgba(6, 107, 65, 0.05);
+      box-shadow: 0 2px 10px rgba(10, 69, 51, 0.05);
     }
 
     .bank-details-card h4 {
@@ -787,7 +822,7 @@
       display: flex;
       justify-content: space-between;
       padding: 8px 0;
-      border-bottom: 1px solid #DCFCE7;
+      border-bottom: 1px solid rgba(10, 69, 51, 0.12);
       font-size: 0.92rem;
     }
 
@@ -796,19 +831,19 @@
     }
 
     .notice-card {
-      background: #FEF3C7;
-      border: 1.5px solid #F59E0B;
+      background: var(--accent-gold-light);
+      border: 1.5px solid var(--border-gold);
       border-radius: var(--radius-sm);
       padding: 16px 18px;
       font-size: 0.92rem;
-      color: #92400E;
+      color: var(--accent-rust);
       line-height: 1.6;
       font-weight: 500;
     }
 
     /* Volunteer Form Specific */
     .volunteer-form-wrap {
-      max-width: 820px;
+      max-width: 840px;
       margin: 0 auto;
     }
 
@@ -818,9 +853,7 @@
       gap: 20px;
     }
 
-    /* ========================================================
-       FAQ SECTION
-       ======================================================== */
+    /* FAQ Section */
     .faq-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -830,22 +863,22 @@
 
     .faq-item {
       background: #FFFFFF;
-      border: 1.5px solid #CBD5E1;
+      border: 1.5px solid var(--border-color);
       border-radius: var(--radius-md);
       padding: 26px;
-      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+      box-shadow: 0 4px 14px rgba(10, 69, 51, 0.04);
       transition: var(--transition);
     }
 
     .faq-item:hover {
-      border-color: var(--primary);
-      box-shadow: 0 6px 20px rgba(6, 107, 65, 0.1);
+      border-color: var(--accent-gold);
+      box-shadow: 0 6px 20px rgba(10, 69, 51, 0.08);
     }
 
     .faq-item h4 {
       font-size: 1.15rem;
       font-weight: 800;
-      color: #0F172A;
+      color: var(--text-dark);
       margin-bottom: 10px;
       display: flex;
       align-items: center;
@@ -858,18 +891,17 @@
 
     .faq-item p {
       font-size: 0.96rem;
-      color: #334155;
+      color: var(--text-body);
       line-height: 1.75;
     }
 
-    /* ========================================================
-       FOOTER (Clean English UI)
-       ======================================================== */
+    /* Footer */
     .footer {
-      background: #0B1912;
+      background: #062419;
       color: #CBD5E1;
       padding: 65px 0 25px 0;
       font-size: 0.95rem;
+      border-top: 1px solid rgba(197, 148, 40, 0.3);
     }
 
     .footer-grid {
@@ -880,7 +912,7 @@
     }
 
     .footer-col h4 {
-      color: #fff;
+      color: #FAF2DD;
       font-size: 1.15rem;
       font-weight: 700;
       margin-bottom: 18px;
@@ -907,10 +939,12 @@
 
     .footer-links a {
       color: #CBD5E1;
+      transition: var(--transition);
     }
 
     .footer-links a:hover {
       color: var(--accent-gold);
+      padding-left: 4px;
     }
 
     .footer-bottom {
@@ -921,129 +955,19 @@
       color: #94A3B8;
     }
 
-    /* Donation Modal (Compact & Responsive for All Devices) */
-    .modal {
-      position: fixed;
-      inset: 0;
-      background: rgba(15, 23, 42, 0.65);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
-      z-index: 3000;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 16px;
-    }
-
-    .modal.active {
-      display: flex;
-    }
-
-    .modal-box {
-      background: #fff;
-      width: 100%;
-      max-width: 400px;
-      max-height: 90vh;
-      overflow-y: auto;
-      border-radius: var(--radius-md);
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
-      border: 1px solid #CBD5E1;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .modal-header {
-      background: var(--primary);
-      color: #fff;
-      padding: 12px 18px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      flex-shrink: 0;
-    }
-
-    .modal-header h3 {
-      font-size: 1.05rem;
-      font-weight: 700;
-      color: #fff;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin: 0;
-    }
-
-    .modal-close {
-      background: rgba(255, 255, 255, 0.15);
-      border: none;
-      color: #fff;
-      width: 28px;
-      height: 28px;
-      border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.25rem;
-      cursor: pointer;
-      line-height: 1;
-      transition: var(--transition);
-    }
-
-    .modal-close:hover {
-      background: rgba(255, 255, 255, 0.3);
-    }
-
-    .modal-body {
-      padding: 16px 18px;
-      text-align: center;
-    }
-
-    @media (max-width: 480px) {
-      .modal {
-        padding: 12px;
-      }
-      .modal-box {
-        max-width: 340px;
-        border-radius: 14px;
-      }
-      .modal-body {
-        padding: 14px 14px;
-      }
-      .modal-header {
-        padding: 10px 14px;
-      }
-      .modal-header h3 {
-        font-size: 0.95rem;
-      }
-    }
-
-    @media (max-width: 1024px) {
-      .nav-menu {
-        gap: 18px;
-      }
-      .nav-link {
-        font-size: 0.9rem;
-      }
-      .btn-donate-nav {
-        padding: 8px 16px;
-        font-size: 0.86rem;
-      }
-    }
-
+    /* Responsive */
     @media (max-width: 992px) {
+      .contact-info-grid, .donation-simple-grid, .faq-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
       .nav-menu {
         display: none !important;
       }
       .mobile-menu-btn {
         display: inline-flex !important;
-      }
-      .contact-info-grid, .two-col-form, .faq-grid, .donation-simple-grid {
-        grid-template-columns: 1fr;
-      }
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
       }
     }
 
@@ -1053,6 +977,7 @@
       }
       .form-row {
         grid-template-columns: 1fr;
+        gap: 0;
       }
     }
 
@@ -1070,37 +995,38 @@
         display: none;
       }
       .header-inner {
-        padding: 8px 0;
+        padding: 10px 0;
+        gap: 10px;
+      }
+      .brand {
+        gap: 10px;
       }
       .brand-logo {
-        height: 38px;
+        width: 44px;
+        height: 44px;
       }
       .brand-text h1 {
-        font-size: 1.15rem;
+        font-size: 1.25rem;
+        line-height: 1.1;
       }
       .brand-text span {
         font-size: 0.65rem;
+        letter-spacing: 0.8px;
+        display: block;
       }
       .btn-donate-nav {
         padding: 7px 12px;
-        font-size: 0.8rem;
+        font-size: 0.82rem;
         gap: 5px;
       }
       .mobile-menu-btn {
-        width: 38px;
-        height: 38px;
+        width: 40px;
+        height: 40px;
         font-size: 1.1rem;
       }
-      .box-card {
-        padding: 20px 16px;
-      }
       .qr-image {
-        max-width: 180px;
-        height: auto;
-      }
-      .btn-mobile-upi {
-        font-size: 0.84rem;
-        padding: 10px 14px;
+        width: 160px;
+        height: 160px;
       }
       .footer-grid {
         grid-template-columns: 1fr;
@@ -1108,8 +1034,20 @@
     }
 
     @media (max-width: 400px) {
+      .brand {
+        gap: 8px;
+      }
+      .brand-logo {
+        width: 38px;
+        height: 38px;
+      }
+      .brand-text h1 {
+        font-size: 1.1rem;
+      }
       .brand-text span {
-        display: none;
+        font-size: 0.56rem;
+        letter-spacing: 0.4px;
+        display: block;
       }
       .donate-text-now {
         display: none;
@@ -1139,15 +1077,15 @@
     </div>
   </div>
 
-  <!-- ================= HEADER (CLEAN ENGLISH UI) ================= -->
+  <!-- ================= HEADER (HERITAGE BRANDING) ================= -->
   <header class="header">
     <div class="container">
       <div class="header-inner">
-        <a href="index.html" class="brand">
-          <img src="assets/images/punarjani-logo.png" alt="Punarjani Logo" class="brand-logo" onerror="this.src='assets/images/keralaayanam_logo.jpg'">
+        <a href="index.html" class="brand" title="Punarjani Charitable Trust">
+          <img src="assets/images/punarjani_emblem.png" alt="Punarjani Emblem" class="brand-logo" onerror="this.src='assets/images/punarjani-logo.png'">
           <div class="brand-text">
             <h1>PUNARJANI</h1>
-            <span>CHARITABLE TRUST</span>
+            <span>RENEW • RECONNECT • REBUILD</span>
           </div>
         </a>
 
@@ -1173,19 +1111,20 @@
   <!-- ================= MOBILE DRAWER ================= -->
   <div class="drawer-backdrop" id="drawerBackdrop" onclick="toggleMenu()"></div>
   <div class="mobile-drawer" id="mobileDrawer">
-    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 16px;">
-      <div class="brand">
-        <img src="assets/images/punarjani-logo.png" alt="Punarjani Logo" style="height: 38px;" onerror="this.src='assets/images/keralaayanam_logo.jpg'">
-        <div class="brand-text">
-          <h2 style="font-size: 1.2rem; color: var(--primary);">PUNARJANI</h2>
+    <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid var(--border-gold); padding-bottom: 16px;">
+      <div style="display: flex; align-items: center; gap: 10px;">
+        <img src="assets/images/punarjani_emblem.png" alt="Punarjani Emblem" style="width: 42px; height: 42px; object-fit: contain; border-radius: 50%;" onerror="this.src='assets/images/punarjani-logo.png'">
+        <div>
+          <h2 style="color: var(--primary); font-size: 1.25rem; font-family: 'Marcellus', serif; line-height: 1;">PUNARJANI</h2>
+          <span style="font-size: 0.65rem; color: var(--accent-gold-dark); font-weight: 700; letter-spacing: 0.8px;">CHARITABLE TRUST</span>
         </div>
       </div>
-      <button onclick="toggleMenu()" style="background: none; border: none; font-size: 1.5rem; cursor: pointer; color: var(--text-dark);">&times;</button>
+      <button onclick="toggleMenu()" style="background: none; border: none; font-size: 1.6rem; cursor: pointer; color: var(--text-dark);">&times;</button>
     </div>
     <ul class="drawer-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
-      <li><a href="initiatives.html">Initiatives</a></li>
+      <li><a href="initiatives.html">Initiatives & Keralaayanam</a></li>
       <li><a href="contact.html" class="active">Contact Us</a></li>
     </ul>
     <div style="margin-top: 30px;">
@@ -1248,7 +1187,7 @@
           <p>
             Email: <a href="mailto:info@punarjanifoundation.com" style="color: var(--primary); font-weight: 700;">info@punarjanifoundation.com</a><br>
             YouTube: <a href="https://www.youtube.com/@Punarjani_charitable" target="_blank" style="color: #DC2626; font-weight: 700;">@Punarjani_charitable</a><br>
-            Instagram: <a href="https://instagram.com/punarjanicharitable" target="_blank" style="color: var(--accent-gold); font-weight: 700;">@punarjanicharitable</a>
+            Instagram: <a href="https://instagram.com/punarjanicharitable" target="_blank" style="color: var(--accent-gold-dark); font-weight: 700;">@punarjanicharitable</a>
           </p>
         </div>
 
@@ -1258,7 +1197,7 @@
   </section>
 
   <!-- ================= SECTION 1: MAKE A DONATION ================= -->
-  <section id="donate" class="section" style="background: #F1F6F3; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+  <section id="donate" class="section" style="background: var(--bg-parchment); border-top: 1.5px solid var(--border-gold); border-bottom: 1.5px solid var(--border-gold);">
     <div class="container">
       
       <div class="box-card" style="max-width: 1000px; margin: 0 auto;">
@@ -1362,9 +1301,6 @@
     </div>
   </section>
 
-    </div>
-  </section>
-
   <!-- ================= SECTION 2: VOLUNTEER & PARTNER FORM ================= -->
   <section id="volunteer" class="section">
     <div class="container">
@@ -1373,7 +1309,7 @@
         <div class="section-header" style="margin-bottom: 35px;">
           <span class="badge-primary">Join the Movement</span>
           <h2 class="section-title">Become a <span>Volunteer</span></h2>
-          <p class="section-subtitle">Be part of the Keralaayanam cultural expedition, student workshops, or agricultural field initiatives.</p>
+          <p class="section-subtitle">Be part of the Keralaayanam cultural expedition, Pravah (പ്രവാഹ്) youth workshops, or agricultural field initiatives.</p>
         </div>
 
         <form id="volunteerForm" onsubmit="handleVolunteerSubmit(event)">
@@ -1398,8 +1334,8 @@
               <label class="form-label" for="vDistrict">District / Location: *</label>
               <select id="vDistrict" class="form-control" required>
                 <option value="">Select your district</option>
-                <option value="Thiruvananthapuram">Thiruvananthapuram</option>
                 <option value="Kollam (Karunagappally)">Kollam (Karunagappally)</option>
+                <option value="Thiruvananthapuram">Thiruvananthapuram</option>
                 <option value="Pathanamthitta">Pathanamthitta</option>
                 <option value="Alappuzha">Alappuzha</option>
                 <option value="Kottayam">Kottayam</option>
@@ -1412,81 +1348,81 @@
                 <option value="Wayanad">Wayanad</option>
                 <option value="Kannur">Kannur</option>
                 <option value="Kasaragod">Kasaragod</option>
-                <option value="Other Indian State">Other Indian State</option>
-                <option value="International / NRI">International / NRI</option>
+                <option value="Other State / Outside India">Other State / Outside India</option>
               </select>
             </div>
           </div>
 
           <div class="form-group">
-            <label class="form-label" for="vInterest">Primary Area of Interest: *</label>
-            <select id="vInterest" class="form-control" required>
-              <option value="">Select your area of contribution</option>
-              <option value="Keralaayanam Cultural Research & Documentation">Keralaayanam Cultural Research & Documentation</option>
-              <option value="Student Mentoring, Arts & Skills Training (Pravah)">Student Mentoring, Arts & Skills Training (Pravah)</option>
-              <option value="Agriculture & Farmers Field Operations">Agriculture & Farmers Field Operations</option>
-              <option value="Event Coordination & Statewide Tour Logistics">Event Coordination & Statewide Tour Logistics</option>
-              <option value="Digital Media, Video Editing & Photography">Digital Media, Video Editing & Photography</option>
-              <option value="Special Care Home, Palliative & Medical Aid">Special Care Home, Palliative & Medical Aid</option>
+            <label class="form-label" for="vArea">Area of Interest to Contribute: *</label>
+            <select id="vArea" class="form-control" required>
+              <option value="">Select an area</option>
+              <option value="Keralaayanam Cultural Documentation">Keralaayanam Cultural Documentation & Fieldwork</option>
+              <option value="Pravah Student Mentoring">Student Mentoring, Arts & Skills Training (Pravah / പ്രവാഹ്)</option>
+              <option value="Agro Producer Development">Agro Producer Co. / Kalpavriksha 100+ Farming Linkages</option>
+              <option value="Special Education & Therapy">Special Education, Care Home & Therapy Support</option>
+              <option value="Media & Technology">Digital Media, Photography & Content Creation</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label class="form-label" for="vMessage">Tell Us About Yourself / Relevant Experience:</label>
-            <textarea id="vMessage" class="form-control" rows="4" placeholder="Briefly describe your background, skills, or why you wish to join Punarjani Trust..."></textarea>
+            <label class="form-label" for="vMessage">How would you like to contribute? (Optional)</label>
+            <textarea id="vMessage" class="form-control" rows="4" placeholder="Tell us about your background, skills, or available time..."></textarea>
           </div>
 
           <button type="submit" class="btn-submit">
             <i class="fa fa-paper-plane"></i> Submit Volunteer Application
           </button>
-
-          <div id="volunteerSuccess" style="display: none; margin-top: 16px; padding: 14px; background: #DEF7EC; border: 1px solid #31C48D; border-radius: var(--radius-sm); color: #03543F; font-weight: 600; text-align: center;">
-            <i class="fa fa-circle-check"></i> Your application has been submitted successfully! Our volunteer coordinator will reach out to you shortly.
-          </div>
         </form>
+
+        <div id="volunteerSuccess" style="display: none; margin-top: 20px; padding: 18px; background: var(--accent-green-soft); border: 1.5px solid var(--border-green); border-radius: var(--radius-sm); text-align: center; color: var(--primary);">
+          <i class="fa fa-circle-check" style="font-size: 1.5rem; margin-bottom: 6px;"></i>
+          <h4 style="font-weight: 800;">Thank You for Your Volunteer Application!</h4>
+          <p style="font-size: 0.95rem; margin-top: 4px;">Our Trust coordinator from Karunagappally will get in touch with you via WhatsApp or phone shortly.</p>
+        </div>
 
       </div>
 
     </div>
   </section>
 
-  <!-- ================= SECTION 3: FAQS ================= -->
-  <section class="section" style="background: #F8FAF8; border-top: 1px solid var(--border-color);">
+  <!-- ================= SECTION 3: FREQUENTLY ASKED QUESTIONS ================= -->
+  <section class="section" style="background: var(--bg-parchment); border-top: 1.5px solid var(--border-gold);">
     <div class="container">
       
       <div class="section-header">
-        <span class="badge-primary">Frequently Asked Questions</span>
-        <h2 class="section-title">Common <span>Questions</span></h2>
-        <p class="section-subtitle">Learn more about our governance, volunteer participation, and initiatives.</p>
+        <span class="badge-primary">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+        <p class="section-subtitle">Common inquiries regarding donations, volunteer registration, and trust operations.</p>
       </div>
 
       <div class="faq-grid">
         
         <div class="faq-item">
-          <h4><i class="fa fa-circle-question"></i> What is Punarjani Charitable Trust?</h4>
+          <h4><i class="fa fa-qrcode"></i> How does the direct scan donation work?</h4>
           <p>
-            Punarjani Charitable Trust is a registered non-profit organization based in Karunagappally, Kollam, Kerala, dedicated to awakening India's indigenous cultural roots, empowering students through skill-based education, supporting farmers via producer organizations, and running compassionate care programs for children and senior citizens.
+            You can simply open Google Pay, PhonePe, Paytm, BHIM, or any banking app, scan our official QR code or transfer directly to <strong>punarjanitrust8@gmail.com</strong>. You choose any amount you wish to contribute directly.
           </p>
         </div>
 
         <div class="faq-item">
-          <h4><i class="fa fa-circle-question"></i> How will my donation be utilized?</h4>
+          <h4><i class="fa fa-receipt"></i> How do I get an official tax receipt?</h4>
           <p>
-            Your contributions directly fund operational materials for the Keralaayanam cultural tour, student learning kits in the Pravah program, farm equipment and processing for rural farmers, and essential medical supplies for our special education center and care home.
+            After completing your UPI payment, tap the <strong>"Send Payment Screenshot on WhatsApp"</strong> button on this page (or message <strong>+91 9946541555</strong>) with your name and address. Our team issues official receipts promptly.
           </p>
         </div>
 
         <div class="faq-item">
-          <h4><i class="fa fa-circle-question"></i> Who can join the Keralaayanam Expedition?</h4>
+          <h4><i class="fa fa-graduation-cap"></i> How can our school or college join Pravah (പ്രവാഹ്)?</h4>
           <p>
-            Anyone passionate about Kerala’s heritage, local ecology, folklore, and indigenous crafts is welcome to join! Volunteers, students, teachers, artists, researchers, and community elders can participate in district-level programs and flag-off gatherings.
+            Educational institutions can register for student training programs, coding labs, arts, and sports workshops by contacting us at <strong>+91 9946541555</strong> or submitting the volunteer/partnership form above.
           </p>
         </div>
 
         <div class="faq-item">
-          <h4><i class="fa fa-circle-question"></i> Can schools and colleges invite the Pravah team?</h4>
+          <h4><i class="fa fa-map-location-dot"></i> Where is the registered headquarters?</h4>
           <p>
-            Yes! Educational institutions across Kerala can register with us to host Pravah workshops covering career orientation, traditional arts, digital skills, sports, and financial literacy.
+            Punarjani Charitable Trust is officially registered and headquartered in <strong>Karunagappally, Kollam District, Kerala - 690518</strong>, operating socio-cultural programs state-wide across all 14 districts.
           </p>
         </div>
 
@@ -1495,15 +1431,18 @@
     </div>
   </section>
 
-  <!-- ================= FOOTER (CLEAN ENGLISH UI) ================= -->
+  <!-- ================= FOOTER ================= -->
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
 
         <div class="footer-col">
-          <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 14px;">
-            <img src="assets/images/punarjani-logo.png" alt="Punarjani" style="height: 42px;" onerror="this.src='assets/images/keralaayanam_logo.jpg'">
-            <h3 style="color: #fff; font-size: 1.3rem;">PUNARJANI</h3>
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 14px;">
+            <img src="assets/images/punarjani_emblem.png" alt="Punarjani Emblem" style="width: 44px; height: 44px; object-fit: contain; border-radius: 50%;" onerror="this.src='assets/images/punarjani-logo.png'">
+            <div>
+              <h3 style="color: #FAF2DD; font-size: 1.3rem; font-family: 'Marcellus', serif; line-height: 1;">PUNARJANI</h3>
+              <span style="font-size: 0.65rem; color: var(--accent-gold); font-weight: 700; letter-spacing: 0.8px;">CHARITABLE TRUST</span>
+            </div>
           </div>
           <p style="color: #94A3B8; font-size: 0.92rem; line-height: 1.8;">
             A Pan-Indian non-profit foundation rooted in Kerala, dedicated to cultural preservation, youth empowerment, agricultural development, and inclusive healthcare.
@@ -1524,7 +1463,7 @@
           <h4>Key Programs</h4>
           <ul class="footer-links">
             <li><a href="initiatives.html#keralaayanam">Keralaayanam Expedition</a></li>
-            <li><a href="initiatives.html#pravah">Pravah Student Program</a></li>
+            <li><a href="initiatives.html#pravah">Pravah (പ്രവാഹ്) Student Program</a></li>
             <li><a href="initiatives.html#agro">Agro Producer Company</a></li>
             <li><a href="initiatives.html#services">Special Education & Care Home</a></li>
           </ul>
@@ -1548,7 +1487,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>© 2026 Punarjani Charitable Trust. All Rights Reserved.</p>
+        <p>© 2026 Punarjani Charitable Trust. All Rights Reserved. Reg. Karunagappally, Kollam, Kerala.</p>
       </div>
     </div>
   </footer>
@@ -1560,7 +1499,6 @@
       const backdrop = document.getElementById('drawerBackdrop');
       drawer.classList.toggle('open');
       backdrop.classList.toggle('open');
-      document.body.style.overflow = drawer.classList.contains('open') ? 'hidden' : '';
     }
 
     function copyUpiId(text, btn) {
@@ -1583,8 +1521,8 @@
 
     function handleVolunteerSubmit(e) {
       e.preventDefault();
+      document.getElementById('volunteerForm').style.display = 'none';
       document.getElementById('volunteerSuccess').style.display = 'block';
-      document.getElementById('volunteerForm').reset();
     }
   </script>
 </body>

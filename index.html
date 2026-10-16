@@ -53,6 +53,10 @@
       box-sizing: border-box;
     }
 
+    html, body {
+      overflow-x: hidden;
+    }
+
     body {
       font-family: 'Plus Jakarta Sans', 'Anek Malayalam', sans-serif;
       background-color: var(--bg-light);
@@ -681,16 +685,27 @@
     }
 
     .vm-box-img {
-      height: 220px;
+      width: 100%;
+      aspect-ratio: 1800 / 1273;
       overflow: hidden;
       position: relative;
-      background: var(--primary-dark);
+      background: #FBF8F1;
+      border-bottom: 1.5px solid #EAE5D9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .vm-box-img img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+
+    .vm-box:hover .vm-box-img img {
+      transform: scale(1.02);
     }
 
     .vm-box-body {
@@ -888,16 +903,16 @@
        ======================================================== */
     .initiatives-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-      gap: 26px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 32px;
     }
 
     .init-card {
       background: #FFFFFF;
       border-radius: var(--radius-lg);
-      border: 1.5px solid var(--border-color);
+      border: 1.5px solid #EAE5D9;
       overflow: hidden;
-      box-shadow: 0 4px 16px rgba(10, 69, 51, 0.05);
+      box-shadow: 0 4px 20px rgba(10, 69, 51, 0.05);
       transition: var(--transition);
       display: flex;
       flex-direction: column;
@@ -905,89 +920,102 @@
 
     .init-card:hover {
       transform: translateY(-6px);
-      box-shadow: 0 16px 36px rgba(10, 69, 51, 0.12);
+      box-shadow: 0 18px 40px rgba(10, 69, 51, 0.12);
       border-color: var(--accent-gold);
     }
 
     .init-card-img {
-      height: 220px;
+      width: 100%;
+      aspect-ratio: 1800 / 1273;
       overflow: hidden;
-      background: var(--primary-dark);
+      background: #FAF8F2;
       position: relative;
+      border-bottom: 1.5px solid #EAE5D9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .init-card-img img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center;
       transition: transform 0.4s ease;
+      display: block;
     }
 
     .init-card:hover .init-card-img img {
-      transform: scale(1.05);
-    }
-
-    .init-card-badge {
-      position: absolute;
-      top: 14px;
-      left: 14px;
-      background: rgba(10, 46, 34, 0.88);
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      color: #FAF2DD;
-      font-size: 0.72rem;
-      font-weight: 800;
-      padding: 6px 14px;
-      border-radius: var(--radius-full);
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      border: 1px solid rgba(197, 148, 40, 0.4);
-      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
-      display: inline-flex;
-      align-items: center;
-      gap: 7px;
-      z-index: 2;
-    }
-
-    .badge-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      display: inline-block;
-      flex-shrink: 0;
-      box-shadow: 0 0 8px currentColor;
+      transform: scale(1.03);
     }
 
     .init-card-body {
-      padding: 26px;
+      padding: 28px 30px 24px 30px;
       display: flex;
       flex-direction: column;
       flex-grow: 1;
     }
 
-    .init-card-title {
-      font-size: 1.35rem;
-      font-weight: 800;
-      color: var(--text-dark);
-      margin-bottom: 6px;
-      line-height: 1.3;
+    .init-card-head {
+      margin-bottom: 14px;
     }
 
-    .init-card-subtitle {
-      font-size: 0.82rem;
-      font-weight: 700;
-      color: var(--primary);
-      background: var(--accent-green-soft);
-      border: 1px solid var(--border-green);
-      padding: 4px 10px;
-      border-radius: 6px;
+    .init-card-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 12px;
+      flex-wrap: wrap;
+    }
+
+    .init-card-category {
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      align-self: flex-start;
-      margin-bottom: 12px;
-      white-space: nowrap;
+      font-size: 0.74rem;
+      font-weight: 800;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      background: rgba(10, 69, 51, 0.06);
+      border: 1px solid rgba(10, 69, 51, 0.15);
+      padding: 4px 11px;
+      border-radius: var(--radius-full);
+    }
+
+    .badge-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent-gold);
+      display: inline-block;
+      flex-shrink: 0;
+      box-shadow: 0 0 6px rgba(197, 148, 40, 0.6);
+    }
+
+    .init-card-title {
+      font-size: 1.55rem;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 8px;
+      line-height: 1.25;
+      font-family: 'Marcellus', 'Plus Jakarta Sans', serif;
+    }
+
+    .init-card-subtitle {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--accent-gold-dark);
+      background: rgba(197, 148, 40, 0.08);
+      border: 1px solid rgba(197, 148, 40, 0.22);
+      padding: 4px 12px;
+      border-radius: var(--radius-full);
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
       font-family: 'Anek Malayalam', sans-serif;
+      line-height: 1.4;
     }
 
     .init-card-subtitle::before {
@@ -1000,28 +1028,76 @@
     }
 
     .init-card-desc {
-      font-size: 0.96rem;
+      font-size: 0.98rem;
       color: var(--text-body);
-      line-height: 1.75;
-      margin-bottom: 20px;
+      line-height: 1.8;
+      margin-bottom: 18px;
       flex-grow: 1;
+    }
+
+    .init-card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 22px;
+    }
+
+    .init-tag {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--primary);
+      background: var(--bg-light);
+      border: 1px solid var(--border-color);
+      padding: 4px 10px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: var(--transition);
+    }
+
+    .init-tag i {
+      color: var(--accent-gold);
+      font-size: 0.78rem;
     }
 
     .init-card-link {
       color: var(--primary);
       font-weight: 700;
       font-size: 0.94rem;
-      display: inline-flex;
+      display: flex;
+      justify-content: space-between;
       align-items: center;
-      gap: 8px;
-      padding-top: 14px;
-      border-top: 1px dashed var(--border-color);
+      padding-top: 18px;
+      border-top: 1px solid rgba(10, 69, 51, 0.08);
       margin-top: auto;
+      text-decoration: none;
+      transition: var(--transition);
     }
 
-    .init-card-link:hover {
+    .init-card-arrow {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--bg-light);
+      border: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-size: 0.85rem;
+      transition: var(--transition);
+    }
+
+    .init-card:hover .init-card-link {
       color: var(--accent-gold-dark);
-      gap: 12px;
+    }
+
+    .init-card:hover .init-card-arrow {
+      background: var(--primary);
+      color: #FAF2DD;
+      border-color: var(--primary);
+      transform: translateX(4px);
     }
 
     /* ========================================================
@@ -1296,12 +1372,22 @@
       .model-timeline {
         grid-template-columns: 1fr 1fr;
       }
+      .initiatives-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+      .init-card-body {
+        padding: 24px 20px 20px 20px;
+      }
     }
 
     @media (max-width: 576px) {
+      .container {
+        padding: 0 14px;
+      }
       .topbar {
         padding: 6px 0;
-        font-size: 0.8rem;
+        font-size: 0.78rem;
       }
       .topbar-info {
         gap: 10px;
@@ -1312,57 +1398,9 @@
         display: none;
       }
       .header-inner {
-        padding: 10px 0;
-        gap: 10px;
+        padding: 8px 0;
+        gap: 8px;
       }
-      .brand {
-        gap: 10px;
-      }
-      .brand-logo {
-        width: 44px;
-        height: 44px;
-      }
-      .brand-text h1 {
-        font-size: 1.25rem;
-        line-height: 1.1;
-      }
-      .brand-text span {
-        font-size: 0.65rem;
-        letter-spacing: 0.8px;
-        display: block;
-      }
-      .btn-donate-nav {
-        padding: 7px 12px;
-        font-size: 0.82rem;
-        gap: 5px;
-      }
-      .mobile-menu-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 1.1rem;
-      }
-      .hero-poster-img {
-        height: 260px;
-      }
-      .model-timeline {
-        grid-template-columns: 1fr;
-      }
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .modal-box {
-        max-width: 340px;
-      }
-      .modal-qr-img {
-        width: 115px;
-        height: 115px;
-      }
-    }
-
-    @media (max-width: 400px) {
       .brand {
         gap: 8px;
       }
@@ -1371,10 +1409,11 @@
         height: 38px;
       }
       .brand-text h1 {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
+        line-height: 1.1;
       }
       .brand-text span {
-        font-size: 0.56rem;
+        font-size: 0.58rem;
         letter-spacing: 0.4px;
         display: block;
       }
@@ -1382,11 +1421,120 @@
         display: none;
       }
       .btn-donate-nav {
-        padding: 6px 10px;
+        padding: 6px 11px;
         font-size: 0.8rem;
+        gap: 4px;
+        white-space: nowrap;
+      }
+      .mobile-menu-btn {
+        width: 38px;
+        height: 38px;
+        font-size: 1.05rem;
+        flex-shrink: 0;
+      }
+      .hero-poster-img {
+        height: 260px;
+      }
+      .model-timeline {
+        grid-template-columns: 1fr;
       }
       .stats-grid {
         grid-template-columns: 1fr;
+        gap: 14px;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 12px;
+      }
+      .header-inner {
+        padding: 7px 0;
+        gap: 6px;
+      }
+      .brand {
+        gap: 7px;
+      }
+      .brand-logo {
+        width: 36px;
+        height: 36px;
+      }
+      .brand-text h1 {
+        font-size: 1.08rem;
+      }
+      .brand-text span {
+        font-size: 0.52rem;
+        letter-spacing: 0.35px;
+      }
+      .btn-donate-nav {
+        padding: 6px 9px;
+        font-size: 0.76rem;
+      }
+      .mobile-menu-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 1rem;
+      }
+      .hero-title {
+        font-size: 1.85rem;
+        line-height: 1.25;
+      }
+      .hero-actions {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+      }
+      .hero-actions .btn {
+        width: 100%;
+        text-align: center;
+      }
+      .init-card-body, .vm-box-body, .manifesto-card, .keralaayanam-box {
+        padding: 18px 14px;
+      }
+      .poster-tab-btn {
+        padding: 6px 10px;
+        font-size: 0.75rem;
+      }
+      .modal-box {
+        max-width: calc(100% - 24px);
+        width: 100%;
+        padding: 22px 16px;
+      }
+      .modal-qr-img {
+        width: 115px;
+        height: 115px;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .container {
+        padding: 0 10px;
+      }
+      .brand {
+        gap: 6px;
+      }
+      .brand-logo {
+        width: 32px;
+        height: 32px;
+      }
+      .brand-text h1 {
+        font-size: 0.96rem;
+      }
+      .brand-text span {
+        font-size: 0.46rem;
+        letter-spacing: 0.2px;
+      }
+      .btn-donate-nav {
+        padding: 5px 8px;
+        font-size: 0.72rem;
+      }
+      .mobile-menu-btn {
+        width: 34px;
+        height: 34px;
+        font-size: 0.92rem;
       }
     }
   </style>
@@ -1731,17 +1879,27 @@
         <!-- Card 1: Keralaayanam -->
         <div class="init-card">
           <div class="init-card-img">
-            <img src="assets/images/new_optimized/A8.jpg" alt="Keralaayanam">
-            <span class="init-card-badge"><span class="badge-dot" style="background: #10B981;"></span>Cultural Expedition</span>
+            <img src="assets/images/new_optimized/A8.jpg" alt="Keralaayanam Flagship Cultural Expedition">
           </div>
           <div class="init-card-body">
-            <h3 class="init-card-title">Keralaayanam</h3>
-            <div class="init-card-subtitle">സാംസ്കാരിക മുന്നേറ്റം</div>
+            <div class="init-card-head">
+              <div class="init-card-meta">
+                <span class="init-card-category"><span class="badge-dot"></span>Cultural Expedition</span>
+                <div class="init-card-subtitle">സാംസ്കാരിക മുന്നേറ്റം</div>
+              </div>
+              <h3 class="init-card-title">Keralaayanam</h3>
+            </div>
             <p class="init-card-desc">
-              A return to our roots. Documenting living heritage, folklore wisdom, and sustainable traditions across Kerala's 14 districts.
+              A return to our roots. Documenting living heritage, folklore wisdom, and sustainable traditions across all 14 districts of Kerala.
             </p>
+            <div class="init-card-tags">
+              <span class="init-tag"><i class="fa fa-map-location-dot"></i> 14 Districts</span>
+              <span class="init-tag"><i class="fa fa-book-open"></i> Living Heritage</span>
+              <span class="init-tag"><i class="fa fa-mountain-sun"></i> Indigenous Wisdom</span>
+            </div>
             <a href="initiatives.html#keralaayanam" class="init-card-link">
-              Learn More <i class="fa fa-arrow-right"></i>
+              <span>Explore Keralaayanam & Study Tour</span>
+              <span class="init-card-arrow"><i class="fa fa-arrow-right"></i></span>
             </a>
           </div>
         </div>
@@ -1749,17 +1907,27 @@
         <!-- Card 2: Pravah -->
         <div class="init-card">
           <div class="init-card-img">
-            <img src="assets/images/new_optimized/A12.jpg" alt="Pravah">
-            <span class="init-card-badge"><span class="badge-dot" style="background: #F59E0B;"></span>Youth & Students</span>
+            <img src="assets/images/new_optimized/A12.jpg" alt="Pravah Student Mentorship and Youth Empowerment">
           </div>
           <div class="init-card-body">
-            <h3 class="init-card-title">Pravah</h3>
-            <div class="init-card-subtitle">വിദ്യാർത്ഥി വികാസം</div>
+            <div class="init-card-head">
+              <div class="init-card-meta">
+                <span class="init-card-category"><span class="badge-dot"></span>Youth & Students</span>
+                <div class="init-card-subtitle">വിദ്യാർത്ഥി വികാസം</div>
+              </div>
+              <h3 class="init-card-title">Pravah</h3>
+            </div>
             <p class="init-card-desc">
-              Learning Beyond Limits. Holistic youth empowerment across Arts, Sports, Robotics, Financial Literacy, and Career Mentorship.
+              Learning Beyond Limits. Holistic youth empowerment bridging indigenous arts, modern athletics, robotics, AI, financial literacy, and career mentorship.
             </p>
+            <div class="init-card-tags">
+              <span class="init-tag"><i class="fa fa-palette"></i> Arts & Athletics</span>
+              <span class="init-tag"><i class="fa fa-robot"></i> Robotics & AI</span>
+              <span class="init-tag"><i class="fa fa-user-graduate"></i> Career Mentorship</span>
+            </div>
             <a href="initiatives.html#pravah" class="init-card-link">
-              Learn More <i class="fa fa-arrow-right"></i>
+              <span>Discover Pravah Student Programs</span>
+              <span class="init-card-arrow"><i class="fa fa-arrow-right"></i></span>
             </a>
           </div>
         </div>
@@ -1767,17 +1935,27 @@
         <!-- Card 3: Agro Bharath & Kalpavriksha 100+ -->
         <div class="init-card">
           <div class="init-card-img">
-            <img src="assets/images/new_optimized/A11.jpg" alt="Agro Bharath - Kalpavriksha 100+">
-            <span class="init-card-badge"><span class="badge-dot" style="background: #0EA5E9;"></span>Agro Producer Co.</span>
+            <img src="assets/images/new_optimized/A11.jpg" alt="Agro Bharath - Kalpavriksha 100+ Coconut Producer Co.">
           </div>
           <div class="init-card-body">
-            <h3 class="init-card-title">Kalpavriksha 100+</h3>
-            <div class="init-card-subtitle">പുനർജനി അഗ്രോ ഭാരത്</div>
+            <div class="init-card-head">
+              <div class="init-card-meta">
+                <span class="init-card-category"><span class="badge-dot"></span>Agro Producer Co.</span>
+                <div class="init-card-subtitle">പുനർജനി അഗ്രോ ഭാരത്</div>
+              </div>
+              <h3 class="init-card-title">Kalpavriksha 100+</h3>
+            </div>
             <p class="init-card-desc">
-              One Coconut • Zero Waste • 100+ Possibilities. Transforming Kerala's agrarian wealth into sustainable value-added products.
+              One Coconut • Zero Waste • 100+ Possibilities. Transforming Kerala's agrarian heritage into high-value sustainable coconut products and farmer networks.
             </p>
+            <div class="init-card-tags">
+              <span class="init-tag"><i class="fa fa-tree"></i> Coconut Economy</span>
+              <span class="init-tag"><i class="fa fa-recycle"></i> Zero Waste Model</span>
+              <span class="init-tag"><i class="fa fa-boxes-stacked"></i> 100+ Products</span>
+            </div>
             <a href="initiatives.html#agro" class="init-card-link">
-              Learn More <i class="fa fa-arrow-right"></i>
+              <span>Explore Agro Bharath Projects</span>
+              <span class="init-card-arrow"><i class="fa fa-arrow-right"></i></span>
             </a>
           </div>
         </div>
@@ -1785,17 +1963,27 @@
         <!-- Card 4: Charitable Trust Services -->
         <div class="init-card">
           <div class="init-card-img">
-            <img src="assets/images/card_welfare_care.jpg" alt="Community Care & Welfare">
-            <span class="init-card-badge"><span class="badge-dot" style="background: #8B5CF6;"></span>Community Care</span>
+            <img src="assets/images/card_welfare_care.jpg" alt="Community Care & Inclusive Welfare">
           </div>
           <div class="init-card-body">
-            <h3 class="init-card-title">Welfare Services</h3>
-            <div class="init-card-subtitle">കാരുണ്യ സേവനം</div>
+            <div class="init-card-head">
+              <div class="init-card-meta">
+                <span class="init-card-category"><span class="badge-dot"></span>Community Care</span>
+                <div class="init-card-subtitle">കാരുണ്യ സേവനം</div>
+              </div>
+              <h3 class="init-card-title">Welfare Services</h3>
+            </div>
             <p class="init-card-desc">
-              Special education for differently-abled children, speech and physio therapy units, retirement care home, and palliative support.
+              Compassionate grassroots care: special education for differently-abled children, speech and physio therapy units, retirement care homes, and palliative support.
             </p>
+            <div class="init-card-tags">
+              <span class="init-tag"><i class="fa fa-heart-pulse"></i> Special Education</span>
+              <span class="init-tag"><i class="fa fa-hand-holding-heart"></i> Therapy Clinic</span>
+              <span class="init-tag"><i class="fa fa-house-chimney-medical"></i> Palliative Care</span>
+            </div>
             <a href="initiatives.html#services" class="init-card-link">
-              Learn More <i class="fa fa-arrow-right"></i>
+              <span>View Healthcare & Care Units</span>
+              <span class="init-card-arrow"><i class="fa fa-arrow-right"></i></span>
             </a>
           </div>
         </div>
